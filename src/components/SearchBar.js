@@ -7,7 +7,10 @@ import {makeStyles} from '@material-ui/core/styles'
         flexDirection: "column", 
         alignItems: "center", 
         padding: "0 5rem 0 5rem"
-     }
+     }, 
+     bigSpace: {
+        marginTop: "5rem"
+      },
 }) 
 
 // creating a search bar component in the center of the page
@@ -25,10 +28,10 @@ function SearchBar(props) {
     }
     const classes = styles() ;
     return (
-        <div className= {classes.wrapper}>
+        <div className= {`${classes.wrapper} ${classes.bigSpace}`}>
             <h1> Product Search </h1>
             {/*creating a form and make the search bar customizable  */}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} >
                 {/* Make the search bar bigger  */}
                 <input type="text" value={searchTerm} onChange={handleChange} style={{height: "100", width: "100",  fill: "#1DA1F2"}} 
                 placeholder= "Anything comes to your mind, we got it (maybe)"  />
