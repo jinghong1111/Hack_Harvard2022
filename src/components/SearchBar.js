@@ -24,9 +24,9 @@ function SearchBar(props) {
         event.preventDefault()
         props.search(searchTerm)
     }
-    //const classes = styles();
+    //const classes = styles() className= {classes.wrapper};
     return (
-        <div className= {classes.wrapper}>
+        <div >
             {/*creating a form and make the search bar customizable  */}
             <form onSubmit={handleSubmit}>
                 {/* Make the search bar bigger  */}
