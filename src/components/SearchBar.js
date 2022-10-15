@@ -11,7 +11,7 @@ import {makeStyles} from '@material-ui/core/styles'
      bigSpace: {
         marginTop: "5rem", 
         font : "bold", 
-        size : "100px", 
+        size : "50px", 
 
       },
 }) 
@@ -37,8 +37,8 @@ function SearchBar(props) {
             <form onSubmit={handleSubmit} >
                 {/* Make the search bar bigger  */}
                 <input type="text" value={searchTerm} onChange={handleChange} 
-                placeholder= "Anything comes to your mind, we got it (maybe)"  />
-                <input type="submit" value="Search" />
+                placeholder= "Anything comes to your mind, we got it (maybe)" style ={{width: "370px"}}/>
+                <input type="submit" value="Search" style={{width: "370px"}} />
             </form>
         </div>
     )
