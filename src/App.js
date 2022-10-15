@@ -3,6 +3,7 @@ import {Typography} from '@material-ui/core';
 import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 import Footer from './components/Footer'
+import SearchBar from './components/SearchBar'
 import './App.css';
 //changes to imports 
 import SecurityIcon from '@material-ui/icons/Security';
@@ -65,7 +66,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar/>
         <div className={classes.wrapper}>
-          <Typography variant="h4" className={classes.bigSpace} color="primary">
+          <Typography variant="h2" className={classes.bigSpace} color="primary">
              De-Priced
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
@@ -77,7 +78,11 @@ function App() {
           <Grid icon={<EventNoteIcon style={{fill: "#449A76", height:"125", width:"125"}}/>} title="Reliable" btnTitle="Show me More"/>
           <Grid icon={<TrendingUpIcon style={{fill: "#D05B2D", height:"125", width:"125"}}/>}  title="Performant" btnTitle="Show me More"/>
        </div> */ } 
-        <div className={`${classes.grid} ${classes.bigSpace}`}>  
+       <div className={`${classes.grid} ${classes.bigSpace}`}>
+      {/* implement the search bar at the center */}
+      <SearchBar/>
+      </div>/
+        <div className={`${classes.grid} ${classes.littleSpace}`}>  
           <Grid icon={<ImportExportIcon style={{fill: "#5EA780", height:"125", width:"125"}}/>}  title="Modular" btnTitle="Show me More"/>
           <Grid icon={<ComputerIcon style={{fill: "#E69426", height:"125", width:"125"}}/>}  title="Multi-Platform" btnTitle="Show me More"/>
           <Grid icon={<HttpIcon style={{fill: "#2EA09D", height:"125", width:"125"}}/>} title="Connected" btnTitle="Show me More"/>
