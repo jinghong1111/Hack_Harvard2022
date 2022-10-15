@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 
-const styles = makeStyles({
+/* const styles = makeStyles({
     bar:{
         paddingTop: "1.15rem",
         backgroundColor: "#CC9966",
@@ -10,6 +10,7 @@ const styles = makeStyles({
           }
     },
 })
+*/ 
 
 // creating a search bar component
 function SearchBar(props) {
@@ -23,13 +24,13 @@ function SearchBar(props) {
         event.preventDefault()
         props.search(searchTerm)
     }
-    const classes = styles();
+    //const classes = styles();
     return (
         <div className= {classes.wrapper}>
             {/*creating a form and make the search bar customizable  */}
             <form onSubmit={handleSubmit}>
                 {/* Make the search bar bigger  */}
-                <input type="text" value={searchTerm} onChange={handleChange} placeholder= "Anything comes to your mind, we got it (maybe)" size = "200x" />
+                <input type="text" value={searchTerm} onChange={handleChange} placeholder= "Anything comes to your mind, we got it (maybe)" fullwidth />
                 <input type="submit" value="Search" size = "200x" />
             </form>
         </div>
