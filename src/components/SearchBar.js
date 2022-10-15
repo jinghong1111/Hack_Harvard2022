@@ -7,7 +7,7 @@ import {makeStyles} from '@material-ui/core/styles'
         alignItems: "center", 
      }, 
      bigSpace: {
-        marginTop: "2rem"
+        marginTop: "5rem"
         
       },
 }) 
