@@ -4,11 +4,15 @@ import {makeStyles} from '@material-ui/core/styles'
  const styles = makeStyles({
     wrapper: {
         display: "flex",
+        flexDirection: "column", 
         alignItems: "center", 
+        padding: "0 5rem 0 5rem"
      }, 
      bigSpace: {
-        marginTop: "5rem"
-        
+        marginTop: "5rem", 
+        font : "bold", 
+        size : "100px", 
+
       },
 }) 
 
