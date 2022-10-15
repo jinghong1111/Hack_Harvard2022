@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg id="master-artboard" viewBox="0 0 975.1100463867188 301.7594299316406" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 336 235.2;" width="975.1100463867188px" height="301.7594299316406px"><rect id="ee-background" x="0" y="0" width="975.1100463867188" height="301.7594299316406" style="fill: white; fill-opacity: 1; pointer-events: none;"/><defs><style id="ee-google-fonts">@import url(https://fonts.googleapis.com/css?family=Audiowide:400);</style><style id="style-1">@import url(https://fonts.googleapis.com/css?family=Anton:400|Roboto+Slab:100,300,400,700);</style><path id="text-path-0" d="M 778.8464965820312 213.4612274169922 A 100 18 0 0 1 988.3533935546875 213.4612274169922 A 100 18 0 0 1 778.8464965820312 213.4612274169922 Z" style="fill: none; stroke: red; stroke-width: 2;"/><path id="text-path-1" d="M 664.5464477539062 37.96122741699219 A 100 19 0 0 1 876.5812377929688 37.96122741699219 A 100 19 0 0 1 664.5464477539062 37.96122741699219" style="fill: none; stroke: red; stroke-width: 2;"/><path id="text-path-2" d="M 765.3650512695312 211.70851135253906 A 100 17 0 0 1 991.5017700195312 211.70851135253906 A 100 17 0 0 1 765.3650512695312 211.70851135253906" style="fill: none; stroke: red; stroke-width: 2;"/><path id="path-1" d="M 765.3650512695312 211.70851135253906 A 100 17 0 0 1 991.5017700195312 211.70851135253906 A 100 17 0 0 1 765.3650512695312 211.70851135253906" style="fill: none; stroke: red; stroke-width: 2;"/><linearGradient data-v-fde0c5aa="" gradientTransform="rotate(25)" id="cb7da18f-e5ab-436b-b822-ff7de5925ed8" x1="0%" y1="0%" x2="100%" y2="0%"><stop data-v-fde0c5aa="" offset="0%" stop-color="#8C48D2" stop-opacity="1"/><stop data-v-fde0c5aa="" offset="100%" stop-color="#CF705A" stop-opacity="1"/></linearGradient><linearGradient data-v-fde0c5aa="" gradientTransform="rotate(25)" id="gradient-1" x1="0%" y1="0%" x2="100%" y2="0%"><stop data-v-fde0c5aa="" offset="0%" stop-color="#8C48D2" stop-opacity="1"/><stop data-v-fde0c5aa="" offset="100%" stop-color="#CF705A" stop-opacity="1"/></linearGradient></defs>
+<svg id="master-artboard" viewBox="0 0 975.1100463867188 301.7594299316406" version="1.1"
+ xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 336 235.2;" 
+ width="975.1100463867188px" height="301.7594299316406px">
+<rect id="ee-background" x="0" y="0" width="975.1100463867188" height="301.7594299316406" style="fill: white; fill-opacity: 1; pointer-events: none;"/>
+    <defs> 
+        <style id="ee-google-fonts">@import url(https://fonts.googleapis.com/css?family=Audiowide:400);</style> 
+        <style id="style-1">@import url(https://fonts.googleapis.com/css?family=Anton:400|Roboto+Slab:100,300,400,700);</style>
+        <path id="text-path-0" d="M 778.8464965820312 213.4612274169922 A 100 18 0 0 1 988.3533935546875 213.4612274169922 A 100 18 0 0 1 778.8464965820312 213.4612274169922 Z" style="fill: none; stroke: red; stroke-width: 2;"/>
+        <path id="text-path-1" d="M 664.5464477539062 37.96122741699219 A 100 19 0 0 1 876.5812377929688 37.96122741699219 A 100 19 0 0 1 664.5464477539062 37.96122741699219" style="fill: none; stroke: red; stroke-width: 2;"/>
+        <path id="text-path-2" d="M 765.3650512695312 211.70851135253906 A 100 17 0 0 1 991.5017700195312 211.70851135253906 A 100 17 0 0 1 765.3650512695312 211.70851135253906" style="fill: none; stroke: red; stroke-width: 2;"/>
+        <path id="path-1" d="M 765.3650512695312 211.70851135253906 A 100 17 0 0 1 991.5017700195312 211.70851135253906 A 100 17 0 0 1 765.3650512695312 211.70851135253906" style="fill: none; stroke: red; stroke-width: 2;"/>
+            <linearGradient data-v-fde0c5aa="" gradientTransform="rotate(25)" id="cb7da18f-e5ab-436b-b822-ff7de5925ed8" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop data-v-fde0c5aa="" offset="0%" stop-color="#8C48D2" stop-opacity="1"/><stop data-v-fde0c5aa="" offset="100%" stop-color="#CF705A" stop-opacity="1"/>
+            </linearGradient>
+            
+            <linearGradient data-v-fde0c5aa="" gradientTransform="rotate(25)" id="gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop data-v-fde0c5aa="" offset="0%" stop-color="#8C48D2" stop-opacity="1"/> 
+                <stop data-v-fde0c5aa="" offset="100%" stop-color="#CF705A" stop-opacity="1"/>
+            </linearGradient>
+    </defs>
 
 
 
