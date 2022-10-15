@@ -2,13 +2,12 @@ import React, {useState} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 
  const styles = makeStyles({
-    bar:{
-        paddingTop: "1.15rem",
-        backgroundColor: "#CC9966",
-        ['@media (max-width:2000x)']: { 
-           flexDirection: "column"
-          }
-    },
+    wrapper: {
+        display: "flex",
+        flexDirection: "column", 
+        alignItems: "center", 
+        padding: "0 5rem 0 5rem"
+     }
 }) 
 
 // creating a search bar component
