@@ -56,6 +56,18 @@ const styles = makeStyles({
     alignItems: "center",
     flexWrap: "wrap", 
   },
+  // search bar formatting 
+  search: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    background: "transpartent",
+    fontSize: "200px",
+    // big search bar 
+    height: "var(--vh, 1vh) * 100",
+    width: "100%",
+    borderradius: "10px",
+  }
 })
 
 function App() {
@@ -78,7 +90,7 @@ function App() {
           <Grid icon={<EventNoteIcon style={{fill: "#449A76", height:"125", width:"125"}}/>} title="Reliable" btnTitle="Show me More"/>
           <Grid icon={<TrendingUpIcon style={{fill: "#D05B2D", height:"125", width:"125"}}/>}  title="Performant" btnTitle="Show me More"/>
        </div> */ } 
-       <div className={`${classes.wrapper} ${classes.bigSpace}`}>
+       <div className={`${classes.search} ${classes.bigSpace}`}>
       {/* implement the search bar at the center */}
       <SearchBar/>
       </div>
