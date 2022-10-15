@@ -81,7 +81,7 @@ function App() {
        <div className={`${classes.grid} ${classes.bigSpace}`}>
       {/* implement the search bar at the center */}
       <SearchBar/>
-      </div>/
+      </div>
         <div className={`${classes.grid} ${classes.littleSpace}`}>  
           <Grid icon={<ImportExportIcon style={{fill: "#5EA780", height:"125", width:"125"}}/>}  title="Modular" btnTitle="Show me More"/>
           <Grid icon={<ComputerIcon style={{fill: "#E69426", height:"125", width:"125"}}/>}  title="Multi-Platform" btnTitle="Show me More"/>
