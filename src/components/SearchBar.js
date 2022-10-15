@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 
-/* const styles = makeStyles({
+ const styles = makeStyles({
     bar:{
         paddingTop: "1.15rem",
         backgroundColor: "#CC9966",
@@ -9,8 +9,7 @@ import {makeStyles} from '@material-ui/core/styles'
            flexDirection: "column"
           }
     },
-})
-*/ 
+}) 
 
 // creating a search bar component
 function SearchBar(props) {
