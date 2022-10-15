@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import CustomBtn from './CustomBtn'
 import {makeStyles} from '@material-ui/core/styles'
 
 const styles = makeStyles({
@@ -30,8 +29,8 @@ function SearchBar(props) {
             {/*creating a form and make the search bar customizable  */}
             <form onSubmit={handleSubmit}>
                 {/* Make the search bar bigger  */}
-                <input type="text" value={searchTerm} onChange={handleChange} placeholder= "Anything comes to your mind, we got it (maybe)" />
-                <input type="submit" value="Search" />
+                <input type="text" value={searchTerm} onChange={handleChange} placeholder= "Anything comes to your mind, we got it (maybe)" size = "200x" />
+                <input type="submit" value="Search" size = "200x" />
             </form>
         </div>
     )
