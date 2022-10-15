@@ -30,8 +30,9 @@ function SearchBar(props) {
             {/*creating a form and make the search bar customizable  */}
             <form onSubmit={handleSubmit}>
                 {/* Make the search bar bigger  */}
-                <input type="text" value={searchTerm} onChange={handleChange} placeholder= "Anything comes to your mind, we got it (maybe)" fullWidth />
-                <input type="submit" value="Search" fullWidth/>
+                <input type="text" value={searchTerm} onChange={handleChange} style={{height: "100", width: "100",  fill: "#1DA1F2"}} 
+                placeholder= "Anything comes to your mind, we got it (maybe)"  />
+                <input type="submit" value="Search" style={{height: "100", width: "100",  fill: "#1DA1F2"} } />
             </form>
         </div>
     )
