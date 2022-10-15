@@ -40,9 +40,10 @@ const styles = makeStyles({
 function NavBar() {
     const classes = styles()
     return (
-            <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>   
-                <img src={logo} className={classes.logo}/> 
-                <img src={logoMobile} className={classes.logoMobile}/> 
+            <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}> 
+             {/*   Testing logo implementations on the side  */}
+               { /* <img src={logo} className={classes.logo}/>  */ }
+               {/* <img src={logoMobile} className={classes.logoMobile}/> */}
                 <Typography variant="h6" className={classes.menuItem}>
                    About
                 </Typography>
