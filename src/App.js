@@ -78,9 +78,9 @@ function App() {
           <Grid icon={<EventNoteIcon style={{fill: "#449A76", height:"125", width:"125"}}/>} title="Reliable" btnTitle="Show me More"/>
           <Grid icon={<TrendingUpIcon style={{fill: "#D05B2D", height:"125", width:"125"}}/>}  title="Performant" btnTitle="Show me More"/>
        </div> */ } 
-       <div className={`${classes.grid} ${classes.bigSpace}`}>
+       <div className={`${classes.wrapper} ${classes.bigSpace}`}>
       {/* implement the search bar at the center */}
-      <SearchBar coolSearch = {styles ={fill: "#E69426", height:"200", width:"200"}}/>
+      <SearchBar/>
       </div>
         <div className={`${classes.grid} ${classes.littleSpace}`}>  
           <Grid icon={<ImportExportIcon style={{fill: "#5EA780", height:"50", width:"50"}}/>}  title="Education Discounts" btnTitle="Show me More"/>
