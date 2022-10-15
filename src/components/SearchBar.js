@@ -24,14 +24,15 @@ function SearchBar(props) {
         event.preventDefault()
         props.search(searchTerm)
     }
-    //const classes = styles() className= {classes.wrapper};
+    const classes = styles() ;
     return (
-        <div >
+        <div className= {classes.wrapper}>
+            <h1> Product Search </h1>
             {/*creating a form and make the search bar customizable  */}
             <form onSubmit={handleSubmit}>
                 {/* Make the search bar bigger  */}
-                <input type="text" value={searchTerm} onChange={handleChange} placeholder= "Anything comes to your mind, we got it (maybe)" fullwidth />
-                <input type="submit" value="Search" size = "200x" />
+                <input type="text" value={searchTerm} onChange={handleChange} placeholder= "Anything comes to your mind, we got it (maybe)" fullWidth />
+                <input type="submit" value="Search" fullWidth/>
             </form>
         </div>
     )

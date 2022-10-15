@@ -40,7 +40,7 @@ const theme = createMuiTheme({
 
 const styles = makeStyles({
   wrapper: {
-    width: "65%",
+    width: "30%",
     margin: "auto",
     textAlign: "center"
   },
