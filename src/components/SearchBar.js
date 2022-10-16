@@ -1,3 +1,4 @@
+// comparison page 
 import React, {useState} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 
@@ -55,21 +56,32 @@ import {makeStyles} from '@material-ui/core/styles'
 
 function SearchBar(props) {
     const [searchTerm, setSearchTerm] = useState('')
+    const [user, setUser] = useState('')
 
     const handleChange = (event) => {
         setSearchTerm(event.target.value)
+        
     }
 
     const handleSubmit = (event) => {
+        console.log(`The name you entered was: ${searchTerm}`)
         event.preventDefault()
-        props.search(searchTerm)
+        // props.search(searchTerm)
+        fetch("http://localhost:5000/search", {
+            method: "POST",
+            mode: "cors",
+            headers:{"content_type":"application/json"},
+            body: JSON.stringify({
+                user: 'null for now',
+                product: searchTerm
+})}).then(response => (response.json()).then(response => console.log(response)))
     }
     const classes = styles() ;
     return (
         <div className= {`${classes.wrapper} ${classes.bigSpace}`}>
             {/*creating a form and make the search bar customizable  */}
             <form onSubmit={handleSubmit} >
-                <input className={classes.textbox} type="text" placeholder="Search " value={searchTerm} onChange={handleChange} />
+                <input className={classes.textbox} type="text" placeholder="Search " name="product_name" value={searchTerm} onChange={handleChange} />
                 <input className= {classes.submit} type="submit" value="Search" />
             </form>
         </div>
