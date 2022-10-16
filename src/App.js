@@ -5,7 +5,6 @@ import Grid from './components/Grid'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 // IMPORTANT, this is for multiple webpages 
-import { BrowserRouter as Router, Switch, Route,  Link } from 'react-router-dom';
 
   
 import './App.css';
