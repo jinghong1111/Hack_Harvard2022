@@ -1,6 +1,6 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core'; 
-import NavBar from './components/NavBar'
+// import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
@@ -85,7 +85,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <NavBar/>
+        //<NavBar/>
         <div className={classes.wrapper}>
           <Typography variant="h2" className={classes.bigSpace} color="primary">
              Price Ain't Right 
