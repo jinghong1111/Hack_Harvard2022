@@ -5,8 +5,10 @@ import Grid from './components/Grid'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 // IMPORTANT, this is for multiple webpages 
-import { BrowserRouter as Router, Switch, Route,  Link } from 'react-router-dom';
-
+import { Routes ,Route, useNavigate } from 'react-router-dom';
+import ProductComparison from './components/ProductComparison';
+import styled from 'styled-components';
+import Compare from "./Pages/Compare";
   
 import './App.css';
 //import icons 
@@ -85,7 +87,22 @@ const styles = makeStyles({
 
 function App() {
   const classes = styles(); 
+  const navigate = useNavigate();
 
+  const navigateToCompare = () => {
+    navigate('/compare');
+
+  }
+
+  const Button = styled.button`
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+`;
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
@@ -98,6 +115,19 @@ function App() {
             Find The best deals on the web with one simple search! (And it's free!)
           </Typography>
         </div>
+        
+        {/* create a button for click */}
+
+           { /* <Button onClick={navigateToCompare}> Compare </Button> */}
+        {/*Add a router to the Compare.js page  */}
+         { /* <Route>
+          <Routes>
+          <Route path='../Pages/compare' element = {Compare} />
+          </Routes>
+        </Route>
+        */}
+        <>
+        </>
 
        <div className={`${classes.search} ${classes.wrapper}`}>
       {/* implement the search bar at the center */}

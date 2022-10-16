@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductComparison from './components/ProductComparison';
+import ProductComparison from '../../src/components/ProductComparison';
 
 class Compare extends React.Component {
 
