@@ -1,7 +1,7 @@
 // comparison page 
 import React, {useState} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
-import { BrowserRouter as Router, Switch, Route,  Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
  const styles = makeStyles({
     wrapper: {
@@ -58,7 +58,8 @@ import { BrowserRouter as Router, Switch, Route,  Link } from 'react-router-dom'
 function SearchBar(props) {
     const [searchTerm, setSearchTerm] = useState('')
     const [user, setUser] = useState('')
-
+    // transfer Data from search bar to the comparison page 
+    const navigate = useNavigate ();
     const handleChange = (event) => {
         setSearchTerm(event.target.value)
         
@@ -75,8 +76,13 @@ function SearchBar(props) {
             body: JSON.stringify({
                 user: 'null for now',
                 product: searchTerm
-})}).then(response => (response.json()).then(response => console.log(response)))
-    }
+})}).then(response => (response.json()).then(response => {
+    console.log(response);
+    navigate('/comparison', response);
+}))
+
+ }
+
 
     const classes = styles() ;
     return (
