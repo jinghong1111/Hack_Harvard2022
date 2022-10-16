@@ -1,18 +1,17 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core'; 
 //import NavBar from './components/NavBar'
-
+import Grid from './components/Grid'
 import Footer from './components/Footer'
-import Home from './components/Home'
+import SearchBar from './components/SearchBar'
 // IMPORTANT, this is for multiple webpages 
+
   
 import './App.css';
 //import icons 
-
-// for page directs 
-import { Route, Routes, useNavigate, BrowserRouter} from 'react-router-dom';
-// import compare from pages
-import Compare from './components/Compare'
+import SchoolIcon from '@mui/icons-material/School';
+import ForestIcon from '@mui/icons-material/Forest';
+import CasinoIcon from '@mui/icons-material/Casino';
 
 const theme = createMuiTheme({
   palette: {
@@ -86,34 +85,28 @@ const styles = makeStyles({
 function App() {
   const classes = styles(); 
 
-
   return (
-    
     <div className="App">
       <ThemeProvider theme={theme}>
-
-
-      {/* <NavBar /> */}
-
-
-       { /*<NavBar/>*/ }
+        {/* <NavBar/> */}
         <div className={classes.wrapper}>
           <Typography variant="h2" className={classes.bigSpace} color="primary">
              Price Ain't Right 
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
-            Find the BEST deals on the web with one simple search! (And it's free!)
+            Find The best deals on the web with one simple search! (And it's free!)
           </Typography>
         </div>
 
-       <BrowserRouter>
-          <Routes>
-            <Route path="/">
-              <Route index element={<Home />} />
-              <Route path="comparison" element={<Compare/>} />
-            </Route>
-          </Routes>
-       </BrowserRouter>
+       <div className={`${classes.search} ${classes.wrapper}`}>
+      {/* implement the search bar at the center */}
+      <SearchBar/>
+      </div>
+        <div className={`${classes.grid} ${classes.littleSpace}`}>  
+          <Grid icon={<SchoolIcon style={{fill: "#5EA780", height:"125", width:"125"}}/>}  title="Education Discounts" btnTitle="Show me More"/>
+          <Grid icon={<ForestIcon style={{fill: "#E69426", height:"125", width:"125"}}/>}  title="Environmental-Friendly" btnTitle="Show me More"/>
+          <Grid icon={<CasinoIcon style={{fill: "#2EA09D", height:"125", width:"125"}}/>} title="Feeling Lucky?" btnTitle="Show me More"/>
+        </div>
         <div className={classes.bigSpace}>
           <Footer/>
         </div>
