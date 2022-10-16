@@ -9,6 +9,8 @@ import './App.css';
 import SchoolIcon from '@mui/icons-material/School';
 import ForestIcon from '@mui/icons-material/Forest';
 import CasinoIcon from '@mui/icons-material/Casino';
+// comparison page 
+import ProductComparison from './components/ProductComparison';
 
 const theme = createMuiTheme({
   palette: {
