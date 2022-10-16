@@ -13,7 +13,6 @@ import { Provider } from 'react-redux';
 ReactDOM.render(
   <ThemeProvider theme={theme}> 
   <React.StrictMode>
-  <CssBaseline />
     <App />
   </React.StrictMode>,
   </ThemeProvider>, document.getElementById('root')
