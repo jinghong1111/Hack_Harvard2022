@@ -12,9 +12,9 @@ import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}> 
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>, 
   </ThemeProvider>, document.getElementById('root')
 );
 
