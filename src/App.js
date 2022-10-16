@@ -1,20 +1,18 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core'; 
-import NavBar from './components/NavBar'
+//import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 // IMPORTANT, this is for multiple webpages 
-import { Routes ,Route, useNavigate } from 'react-router-dom';
-import ProductComparison from './components/ProductComparison';
-import styled from 'styled-components';
-import Compare from "./Pages/Compare";
   
 import './App.css';
 //import icons 
 import SchoolIcon from '@mui/icons-material/School';
 import ForestIcon from '@mui/icons-material/Forest';
 import CasinoIcon from '@mui/icons-material/Casino';
+// for page directs 
+import {  Route, Routes, useNavigate } from 'react-router-dom';
 
 const theme = createMuiTheme({
   palette: {
@@ -85,49 +83,28 @@ const styles = makeStyles({
   }
 })
 
+
 function App() {
   const classes = styles(); 
-  const navigate = useNavigate();
 
-  const navigateToCompare = () => {
-    navigate('/compare');
 
-  }
-
-  const Button = styled.button`
-  background-color: black;
-  color: white;
-  font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-`;
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <NavBar/>
+      {/* Make a button to test the page direct */ }
+
+
+
+
+       { /*<NavBar/>*/ }
         <div className={classes.wrapper}>
           <Typography variant="h2" className={classes.bigSpace} color="primary">
              Price Ain't Right 
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
-            Find The best deals on the web with one simple search! (And it's free!)
+            Find the BEST deals on the web with one simple search! (And it's free!)
           </Typography>
         </div>
-        
-        {/* create a button for click */}
-
-           { /* <Button onClick={navigateToCompare}> Compare </Button> */}
-        {/*Add a router to the Compare.js page  */}
-         { /* <Route>
-          <Routes>
-          <Route path='../Pages/compare' element = {Compare} />
-          </Routes>
-        </Route>
-        */}
-        <>
-        </>
 
        <div className={`${classes.search} ${classes.wrapper}`}>
       {/* implement the search bar at the center */}

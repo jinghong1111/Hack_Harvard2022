@@ -1,8 +1,8 @@
 import React from 'react';
-import ProductComparison from '../../src/components/ProductComparison';
+import ProductComparison from '../src/components/ProductComparison';
+import {withRouter} from 'react-router-dom';
 
 class Compare extends React.Component {
-
   render() {
     return (
       <ProductComparison />
@@ -10,4 +10,4 @@ class Compare extends React.Component {
   }
 }
 
-export default Compare;
+export default withRouter(Compare);
