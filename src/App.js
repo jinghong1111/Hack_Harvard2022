@@ -1,20 +1,18 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core'; 
 //import NavBar from './components/NavBar'
-import Grid from './components/Grid'
+
 import Footer from './components/Footer'
-import SearchBar from './components/SearchBar'
+import Home from './components/Home'
 // IMPORTANT, this is for multiple webpages 
   
 import './App.css';
 //import icons 
-import SchoolIcon from '@mui/icons-material/School';
-import ForestIcon from '@mui/icons-material/Forest';
-import CasinoIcon from '@mui/icons-material/Casino';
-// for page directs 
-import { Route, Routes, useNavigate } from 'react-router-dom';
-// import compare from pages
 
+// for page directs 
+import { Route, Routes, useNavigate, BrowserRouter} from 'react-router-dom';
+// import compare from pages
+import Compare from './components/Compare'
 
 const theme = createMuiTheme({
   palette: {
@@ -107,15 +105,14 @@ function App() {
           </Typography>
         </div>
 
-       <div className={`${classes.search} ${classes.wrapper}`}>
-      {/* implement the search bar at the center */}
-      <SearchBar/>
-      </div>
-        <div className={`${classes.grid} ${classes.littleSpace}`}>  
-          <Grid icon={<SchoolIcon style={{fill: "#5EA780", height:"125", width:"125"}}/>}  title="Education Discounts" btnTitle="Show me More"/>
-          <Grid icon={<ForestIcon style={{fill: "#E69426", height:"125", width:"125"}}/>}  title="Environmental-Friendly" btnTitle="Show me More"/>
-          <Grid icon={<CasinoIcon style={{fill: "#2EA09D", height:"125", width:"125"}}/>} title="Feeling Lucky?" btnTitle="Show me More"/>
-        </div>
+       <BrowserRouter>
+          <Routes>
+            <Route path="/">
+              <Route index element={<Home />} />
+              <Route path="comparison" element={<Compare/>} />
+            </Route>
+          </Routes>
+       </BrowserRouter>
         <div className={classes.bigSpace}>
           <Footer/>
         </div>
