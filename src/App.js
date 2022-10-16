@@ -10,18 +10,9 @@ import './App.css';
 //import icons 
 
 // for page directs 
-<<<<<<< HEAD
-import { Route, Routes, useNavigate } from 'react-router-dom';
-// import compare from components
-import Compare from './components/Compare';
-
-
-
-=======
 import { Route, Routes, useNavigate, BrowserRouter} from 'react-router-dom';
 // import compare from pages
 import Compare from './components/Compare'
->>>>>>> b5dd09b15f9864fbf740a2aebd89f50f6f4601f8
 
 const theme = createMuiTheme({
   palette: {
@@ -100,12 +91,9 @@ function App() {
     
     <div className="App">
       <ThemeProvider theme={theme}>
-      {/* Make a clickable button*/ }
 
 
       {/* <NavBar /> */}
-
-
 
 
        { /*<NavBar/>*/ }
