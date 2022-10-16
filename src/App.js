@@ -4,13 +4,15 @@ import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
+// IMPORTANT, this is for multiple webpages 
+import { BrowserRouter as Router, Switch, Route,  Link } from 'react-router-dom';
+
+  
 import './App.css';
 //import icons 
 import SchoolIcon from '@mui/icons-material/School';
 import ForestIcon from '@mui/icons-material/Forest';
 import CasinoIcon from '@mui/icons-material/Casino';
-// comparison page 
-import ProductComparison from './components/ProductComparison';
 
 const theme = createMuiTheme({
   palette: {
