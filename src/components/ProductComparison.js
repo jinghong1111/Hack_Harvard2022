@@ -2,11 +2,11 @@
 import React from 'react';
 import { Container, Typography, Grid, Box } from '@material-ui/core';
 
-import ProductList from '../Pages/components2/ProductList'
-import ComparisonTable from '..Pages/components2/ComparisonTable'
-import AttributeFilter from '..Pages/components2/AttributeFilter'
-import SectionHeader from '../Pages/components2/SectionHeader'
-import withSampleData from '../Pages/components2/withSampleData'
+import ProductList from './ProductList'
+import ComparisonTable from './ComparisonTable'
+import AttributeFilter from './AttributeFilter'
+import SectionHeader from './SectionHeader'
+import withSampleData from './withSampleData'
 
 import '../App.css';
 

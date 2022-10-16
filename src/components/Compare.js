@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductComparison from '../components2/ProductComparison';
+import ProductComparison from './ProductComparison';
 
 class Compare extends React.Component {
   render() {
