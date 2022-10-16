@@ -13,7 +13,10 @@ import ForestIcon from '@mui/icons-material/Forest';
 import CasinoIcon from '@mui/icons-material/Casino';
 // for page directs 
 import { Route, Routes, useNavigate } from 'react-router-dom';
-// import compare from pages
+// import compare from components
+import Compare from './components/Compare';
+
+
 
 
 const theme = createMuiTheme({
@@ -85,15 +88,19 @@ const styles = makeStyles({
   }
 })
 
-
 function App() {
   const classes = styles(); 
 
 
   return (
+    
     <div className="App">
       <ThemeProvider theme={theme}>
-      {/* Make a button to test the page direct */ }
+      {/* Make a clickable button*/ }
+
+
+      {/* <NavBar /> */}
+
 
 
 

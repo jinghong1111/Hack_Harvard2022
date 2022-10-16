@@ -3297,6 +3297,11 @@
   "resolved" "https://registry.npmjs.org/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz"
   "version" "3.0.0"
 
+"button@^1.1.1":
+  "integrity" "sha512-/eICyCdXkem6L3i02jNfo7CgY0lDtELov2IhiTAUkkl3kTnnr/Jee0Fjnj4TuLwl8wkdtplZaWWXMCeowmkmpA=="
+  "resolved" "https://registry.npmjs.org/button/-/button-1.1.1.tgz"
+  "version" "1.1.1"
+
 "bytes@3.0.0":
   "integrity" "sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg="
   "resolved" "https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz"
