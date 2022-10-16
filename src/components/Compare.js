@@ -1,8 +1,7 @@
 import React from 'react';
-import ProductComparison from './components/ProductComparison';
+import ProductComparison from './ProductComparison';
 
 class Compare extends React.Component {
-
   render() {
     return (
       <ProductComparison />
@@ -10,4 +9,4 @@ class Compare extends React.Component {
   }
 }
 
-export default Compare;
+export default (Compare);

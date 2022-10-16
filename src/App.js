@@ -1,18 +1,20 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core'; 
-import NavBar from './components/NavBar'
+//import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 // IMPORTANT, this is for multiple webpages 
-import { BrowserRouter as Router, Switch, Route,  Link } from 'react-router-dom';
-
   
 import './App.css';
 //import icons 
 import SchoolIcon from '@mui/icons-material/School';
 import ForestIcon from '@mui/icons-material/Forest';
 import CasinoIcon from '@mui/icons-material/Casino';
+// for page directs 
+import { Route, Routes, useNavigate } from 'react-router-dom';
+// import compare from pages
+
 
 const theme = createMuiTheme({
   palette: {
@@ -83,19 +85,25 @@ const styles = makeStyles({
   }
 })
 
+
 function App() {
   const classes = styles(); 
+
 
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <NavBar/>
+      {/* Make a button to test the page direct */ }
+
+
+
+       { /*<NavBar/>*/ }
         <div className={classes.wrapper}>
           <Typography variant="h2" className={classes.bigSpace} color="primary">
              Price Ain't Right 
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
-            Find The best deals on the web with one simple search! (And it's free!)
+            Find the BEST deals on the web with one simple search! (And it's free!)
           </Typography>
         </div>
 
